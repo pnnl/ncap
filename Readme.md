@@ -34,7 +34,6 @@ dennis.thomas@pnnl.gov
 
 * 0.1
 
-## License
+## Cite
 
-BSD
-
+Please cite: (In Review)
