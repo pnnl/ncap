@@ -1,0 +1,49 @@
+echo
+
+start NCAA 
+title NCAA 
+
+memory total 2800 gb
+basis "ao basis" spherical print
+  *  library 6-311G** 
+end
+
+dft
+  mult 1
+  grid xfine
+  xc m06-2x
+  iterations 5000
+  mulliken
+  decomp
+  tolerances tight
+end
+
+driver
+  maxiter 999
+  xyz opt
+end
+
+charge 0
+geometry noautoz units angstrom nocenter autosym
+  load ./ncaa.xyz 
+end
+hessian
+  thresh 1d-9
+end
+
+task dft optimize
+task dft freq
+task dft hessian
+
+dplot
+  TITLE HOMO
+   LimitXYZ
+ -8.0 8.0 1000
+ -6.0 6.0 1000
+ -8.0 8.0 1000
+  spin total
+  gaussian
+  output total_density.cube
+end
+task dft 
+task dplot 

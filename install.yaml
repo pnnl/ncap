@@ -1,0 +1,13 @@
+name: ncap
+
+channels:
+  - conda-forge
+
+dependencies:
+  - pyinstaller
+  - openbabel
+  - networkx
+  - scipy
+  - matplotlib
+  - numpy
+  - xtb
