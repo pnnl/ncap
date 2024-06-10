@@ -7,6 +7,8 @@ Python code to generate non-canonical amino acid topology and parameter files fo
 Generates topology and parameter files for novel side chains.
 Required input: coordinate file in *.xyz format.
 
+This research conducted in collaboration with Dr. John Cort and was funded by the Defense Threat Reduction Agency.
+
 ## Getting Started
 See the example/NCAP_Tutorial.pdf
 
