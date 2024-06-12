@@ -22,7 +22,7 @@ See the example/NCAP_Tutorial.pdf
 
 ### Installing
 
-* conda env create -f install.yaml
+* mamba env create -f install.yaml
 
 ## Authors
 
